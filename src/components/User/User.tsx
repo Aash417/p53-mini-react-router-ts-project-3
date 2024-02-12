@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 
 function User() {
 	// const { userId } = useParams();
-	const [data, setData] = useState([]);
+	const [data, setData] = useState<{ name?: string }>({});
 
 	useEffect(() => {
 		fetch('https://api.github.com/users/Aash417')
